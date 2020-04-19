@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Programming forum about Java powered by Spring Framework"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Vanhack Forum</title>
+   <!--   <link href="/webjars/materializecss/0.100.2/css/materialize.min.css" rel="stylesheet"/>-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" rel="stylesheet"/>
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+                <ul id="nav-left" class="left hide-on-med-and-down">
+                    <li><a th:href="@{'/topics'}">All</a></li>
+                    <li><a th:href="@{'/topics/fbn'}">First Bank</a></li>
+                    <li><a th:href="@{'/topics/uni'}">Union Bank</a></li>
+                    <li><a th:href="@{'/topics/wma'}">Wema Bank</a></li>
+                    <li><a th:href="@{'/topics/zth'}">Zenith Bank</a></li>
+                    <li><a th:href="@{'/topics/uba'}">United bank For Africa</a></li>
+                </ul>
+                <ul id="nav-right" class="right hide-on-med-and-down">
+                    <li><a th:href="@{'/profileT'}">Profile</a></li>
+                    <li><a th:href="@{'/register'}">Register</a></li>
+                    <li><a th:href="@{'/logout'}">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main layout:fragment="content">
+        <p>Default content</p>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Nigerin Bank Forum</h5>
+                    <p class="white-text">Nigerian Banks performance Forum</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="white-text" href="https://github.com/assokush">Github</a></li>
+                        <li><a class="white-text" href="https://www.linkedin.com/in/oluseyi-kusoro-03857a29/">Linkedin</a></li>
+                        <li><a class="white-text" href="https://www.facebook.com/oluseyi.kusoro">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                All rights reserved &nbsp;|&nbsp; Oluseyi.kusoro@finservetecknologies.nigeria.com&nbsp;|&nbsp; 
+            </div>
+        </div>
+    </footer>
+    <script src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/webjars/materializecss/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
